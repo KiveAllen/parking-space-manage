@@ -14,6 +14,7 @@
     "@vant/area-data": "^2.0.0",
     "axios": "^1.7.7",
     "date-fns": "^4.1.0",
+    "element-plus": "^2.9.0",
     "pinia": "^2.2.6",
     "pnpm": "^9.13.2",
     "ts-node": "^10.9.2",
@@ -28,8 +29,8 @@
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "typescript": "~5.6.2",
-    "unplugin-auto-import": "^0.18.5",
-    "unplugin-vue-components": "^0.27.4",
+    "unplugin-auto-import": "^0.18.6",
+    "unplugin-vue-components": "^0.27.5",
     "vite": "^5.4.10",
     "vue-tsc": "^2.1.8"
   }
