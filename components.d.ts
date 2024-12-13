@@ -11,6 +11,7 @@ declare module 'vue' {
     MapComponent: typeof import('./src/components/MapComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserDrawer: typeof import('./src/components/UserDrawer.vue')['default']
     VanAddressEdit: typeof import('vant/es')['AddressEdit']
     VanButton: typeof import('vant/es')['Button']
     VanCalendar: typeof import('vant/es')['Calendar']
