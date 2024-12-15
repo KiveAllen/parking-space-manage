@@ -1,53 +1,37 @@
 <template>
   <div class="container">
-    <el-card style="max-width: 1300px; ">
+    <el-card style="width: 1200px; height: 720px;">
       <template #header>
         <div class="card-header">
-          <span>Card name</span>
+          <span>用户管理页面</span>
         </div>
       </template>
       <el-table :data="tableData" style="width: 100%">
-        <el-table-column label="Date" width="180">
+        <el-table-column label="昵称">
           <template #default="scope">
-            <div style="display: flex; align-items: center">
-              <el-icon>
-                <timer/>
-              </el-icon>
-              <span style="margin-left: 10px">{{ scope.row.date }}</span>
-            </div>
+            <el-tag>{{ scope.row.name }}</el-tag>
           </template>
         </el-table-column>
-        <el-table-column label="Name">
+        <el-table-column label="Date" width="180">
           <template #default="scope">
-            <el-popover effect="light" placement="top" trigger="hover" width="auto">
-              <template #default>
-                <div>name: {{ scope.row.name }}</div>
-                <div>address: {{ scope.row.address }}</div>
-              </template>
-              <template #reference>
-                <el-tag>{{ scope.row.name }}</el-tag>
-              </template>
-            </el-popover>
+            <span style="margin-left: 10px">{{ scope.row.date }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Operations" width="180">
           <template #default="scope">
             <el-button size="small" @click="handleEdit(scope.$index, scope.row)">
-              Edit
+              编辑
             </el-button>
             <el-button
                 size="small"
                 type="danger"
                 @click="handleDelete(scope.$index, scope.row)"
             >
-              Delete
+              删除
             </el-button>
           </template>
         </el-table-column>
       </el-table>
-
-
-      <template #footer>Footer content</template>
     </el-card>
 
 
