@@ -144,7 +144,7 @@ declare namespace API {
         optimizeCountSql?: boolean;
         orders?: OrderItem[];
         pages?: number;
-        records?: Reservation[];
+        records?: ReservationListDTO[];
         searchCount?: boolean;
         size?: number;
         total?: number;
@@ -197,6 +197,23 @@ declare namespace API {
     };
 
     type Reservation = {
+        name?: string
+        createTime?: string;
+        id?: number;
+        ownerId?: number;
+        reservationStatus?: number;
+        reservationTimeEnd?: string;
+        reservationTimeStart?: string;
+        spaceId?: number;
+        totalCost?: number;
+        updateTime?: string;
+        userId?: number;
+    };
+
+    type ReservationListDTO = {
+        userName?: string
+        ownerName?: string
+        parkingSpacePhoto?: string
         name?: string
         createTime?: string;
         id?: number;
